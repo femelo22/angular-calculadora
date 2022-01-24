@@ -12,10 +12,10 @@ export class CalculadoraService {
 
   constructor() { }
 
-  static readonly SOMA: string = '+';
-  static readonly SUBTRACAO: string = '-';
-  static readonly DIVISAO: string = '/';
-  static readonly MULTIPLICACAO: string = '*';
+  static readonly SOMAR: string = '+';
+  static readonly SUBTRAIR: string = '-';
+  static readonly DIVIDIR: string = '/';
+  static readonly MULTIPLICAR: string = '*';
 
 
   /**
@@ -29,17 +29,17 @@ export class CalculadoraService {
     let resultado: number; // o escopo da variavel com LET é local
 
     switch (operacao) {
-      case CalculadoraService.SOMA:
+      case CalculadoraService.SOMAR:
         resultado = num1 + num2;
         break;
-      case CalculadoraService.SUBTRACAO:
+      case CalculadoraService.SUBTRAIR:
         resultado = num1 - num2;
         break;
-      case CalculadoraService.MULTIPLICACAO:
-        resultado = num1 * num2;
-        break;
-      case CalculadoraService.DIVISAO:
+      case CalculadoraService.DIVIDIR:
         resultado = num1 / num2;
+        break;
+      case CalculadoraService.MULTIPLICAR:
+        resultado = num1 * num2;
         break
       default:
         resultado = 0;
