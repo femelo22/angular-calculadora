@@ -1,5 +1,6 @@
 /**
  * Serviço responsavel por executar nossas operações basicas da calcualdora
+ * @author Luiz Fernando M Gonçalves =)
  */
 
 import { Injectable } from '@angular/core';
@@ -16,6 +17,14 @@ export class CalculadoraService {
   static readonly DIVISAO: string = '/';
   static readonly MULTIPLICACAO: string = '*';
 
+
+  /**
+   * 
+   * @param num1 number Primeiro parametro
+   * @param num2 number Segundo parametro
+   * @param operacao string Tipo da operação
+   * @returns number Resultado da operação
+   */
   calcular(num1: number, num2: number, operacao: string): number {
     let resultado: number; // o escopo da variavel com LET é local
 
