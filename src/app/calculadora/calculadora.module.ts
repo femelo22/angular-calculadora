@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalculadoraComponent } from './components';
+import { CalculadoraService } from './services';
 
 
 
@@ -13,6 +14,9 @@ import { CalculadoraComponent } from './components';
   ],
   imports: [
     CommonModule
+  ],
+  providers: [
+    CalculadoraService //registrando como um provedor de serviços para o Angular
   ]
 })
 
