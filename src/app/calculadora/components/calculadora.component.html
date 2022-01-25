@@ -6,6 +6,7 @@
         name="display"
         [value]="display"
         readonly
+        id="display"
         />
     </div>
 
@@ -14,20 +15,20 @@
     <button type="button" (click)="adicionarNumero('7')">7</button>
     <button type="button" (click)="adicionarNumero('8')">8</button>
     <button type="button" (click)="adicionarNumero('9')">9</button>
-    <button type="button" (click)="definirOperacao('+')">+</button>
+    <button type="button" (click)="definirOperacao('+')" id="btnSoma">+</button>
 
     <button type="button" (click)="adicionarNumero('4')">4</button>
     <button type="button" (click)="adicionarNumero('5')">5</button>
     <button type="button" (click)="adicionarNumero('6')">6</button>
     <button type="button" (click)="definirOperacao('-')">-</button>
 
-    <button type="button" (click)="adicionarNumero('1')">1</button>
-    <button type="button" (click)="adicionarNumero('2')">2</button>
+    <button type="button" (click)="adicionarNumero('1')" id="btn1">1</button>
+    <button type="button" (click)="adicionarNumero('2')" id="btn2">2</button>
     <button type="button" (click)="adicionarNumero('3')">3</button>
     <button type="button" (click)="definirOperacao('/')">/</button>
 
     <button type="button" (click)="adicionarNumero('0')">0</button>
     <button type="button" (click)="adicionarNumero('.')">.</button>
-    <button type="button" (click)="calcular()">=</button>
+    <button type="button" (click)="calcular()" id="btnCalcular">=</button>
     <button type="button" (click)="definirOperacao('*')">*</button>
 </div>
