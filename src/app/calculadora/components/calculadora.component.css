@@ -11,20 +11,18 @@
   }
   
   .result {
-    width: 305px;
-    height: 40px;
     float: left;
     line-height: 40px;
-    background-color: #fff;
     color: #000;
     margin: 5px;
   }
   
-  .result > p {
-    margin-left: 10px;
+  .result > input {
+    width: 305px;
+    height: 40px;
   }
   
-  .clear, span {
+  .clear, button {
     height: 40px;
     border-bottom: 3px solid grey;
     border-radius: 10px;
@@ -46,11 +44,12 @@
   
   
   
-  span {
+  button {
     float: left;
     width: 95px;
   }
-  span:hover{
+  
+  button:hover{
       
       background-color:#00BFFF;
   }

@@ -41,6 +41,7 @@ export class CalculadoraComponent implements OnInit {
   adicionarNumero(numero: string): void {
     if (this.operacao === null) {
       this.numero1 = this.concatenarNumero(this.numero1, numero);
+      console.log(this.numero1)
     } else {
       this.numero2 = this.concatenarNumero(this.numero2, numero);
     }
@@ -77,7 +78,7 @@ export class CalculadoraComponent implements OnInit {
    * @return void
    */
   definirOperacao(operacao: string): void {
-    if (operacao === null) {
+    if (this.operacao === null) {
       this.operacao = operacao;
       return;
     }

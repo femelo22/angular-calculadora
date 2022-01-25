@@ -1,26 +1,33 @@
 <div id="calculator">
+    
     <div class="result">
-        <p></p>
+        <input 
+        type="text"
+        name="display"
+        [value]="display"
+        readonly
+        />
     </div>
-    <div class="clear">C</div>
 
-    <span>7</span>
-    <span>8</span>
-    <span>9</span>
-    <span>+</span>
+    <button class="clear" (click)="limpar()">C</button>
 
-    <span>4</span>
-    <span>5</span>
-    <span>6</span>
-    <span>-</span>
+    <button type="button" (click)="adicionarNumero('7')">7</button>
+    <button type="button" (click)="adicionarNumero('8')">8</button>
+    <button type="button" (click)="adicionarNumero('9')">9</button>
+    <button type="button" (click)="definirOperacao('+')">+</button>
 
-    <span>1</span>
-    <span>2</span>
-    <span>3</span>
-    <span>/</span>
+    <button type="button" (click)="adicionarNumero('4')">4</button>
+    <button type="button" (click)="adicionarNumero('5')">5</button>
+    <button type="button" (click)="adicionarNumero('6')">6</button>
+    <button type="button" (click)="definirOperacao('-')">-</button>
 
-    <span>0</span>
-    <span>.</span>
-    <span>=</span>
-    <span>*</span>
+    <button type="button" (click)="adicionarNumero('1')">1</button>
+    <button type="button" (click)="adicionarNumero('2')">2</button>
+    <button type="button" (click)="adicionarNumero('3')">3</button>
+    <button type="button" (click)="definirOperacao('/')">/</button>
+
+    <button type="button" (click)="adicionarNumero('0')">0</button>
+    <button type="button" (click)="adicionarNumero('.')">.</button>
+    <button type="button" (click)="calcular()">=</button>
+    <button type="button" (click)="definirOperacao('*')">*</button>
 </div>
